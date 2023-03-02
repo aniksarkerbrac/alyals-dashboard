@@ -1,22 +1,21 @@
 import React from 'react';
 import Sidenav from '../Sidenav/Sidenav';
 import TopNavbar from '../TopNavbar/TopNavbar';
-import CategoryForm from '../CategoryForm/CategoryForm';
-import DataTable from '../DataTable/DataTable';
+import Form from '../Form/Form';
 
-const Dashboard = () => {
+const NewSupplier = () => {
+    const formName = 'Supplier';
     return (
         <div class="hold-transition sidebar-mini">
           <div class="wrapper">
             <Sidenav></Sidenav>
             <TopNavbar></TopNavbar>
-            <CategoryForm></CategoryForm>
-            {/* <DataTable></DataTable> */}
+            <div class="content-wrapper py-3">
+              <Form formName={formName}></Form> 
+            </div>
           </div>
-            
-            
         </div>
     );
 };
 
-export default Dashboard;
+export default NewSupplier;
